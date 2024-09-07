@@ -123,6 +123,10 @@
 		</div>
 	</div>
 	<script>
+
+		const fullUrl = window.location.href
+		const urlAfterHost = fullUrl.split(window.location.host)[1]
+		
 		const uri = (location.pathname ? location.pathname : '') + (location.search ? location.search : '')
 		const githubUrl = "https://github.com/FlyBitVIP/FlyBit-Airport-Address"
 		const getDomain = (index) => {
@@ -136,7 +140,7 @@
 			let target = $(this).find(".entry").eq(0).html()
 			target = target == "GitHub" ? githubUrl : "https://" + target
 			if($(this).hasClass("withUri")){
-				target = target + uri
+				target = target + urlAfterHost
 			}
 			window.open(target)
 		})

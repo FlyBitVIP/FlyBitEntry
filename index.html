@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+	<title>FlyBit</title>
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<style>
+		* {
+			color: #FEFEFE;
+		}
+	
+		body {
+			background-color: #333;
+			height: 100%;
+			width: 100%;
+			overflow: hidden;
+		}
+		hr {
+			margin-bottom: 30px;
+			border: 1px solid #4a4a4a;
+		}
+		.wrap{
+			width: 100%;
+			text-align: center;
+		}
+		
+		.box{
+			margin-top: 200px;
+			width: 80%;
+			max-width: 300px;
+			margin:100px auto 0 auto;
+		}
+		
+		.title {
+			font-weight: bold;
+			color: green;
+			width: 100%;
+			text-align: center;
+			font-size: 1.5em;
+			margin-bottom: 50px;
+		}
+		.item {
+			width: 100%;
+			text-align: left;
+			margin-bottom: 5px;
+			cursor: pointer;
+		}
+		
+		.label{
+			font-size: 0.8em;
+			color: #ccc;
+		}
+		
+		.entry{
+			margin-left: 10px;
+			font-size: 1.1em;
+			font-style: normal;
+			font-weight: bold;
+			white-space:nowrap;
+			word-wrap: break-word;
+			word-break:break-all;
+			text-overflow:ellipsis;
+			overflow:hidden;
+			max-width: 60%;
+		}
+		.warn{
+			font-size: 0.7em;
+			font-style: italic;
+			color: #999;
+			margin-top: 5px;
+		}
+		
+		.info {
+			font-weight: bold;
+			color: yellow;
+			width: 100%;
+			text-align: center;
+			font-size: 1em;
+			margin-top: 50px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrap">
+		<div class="box">
+			<div class="title">FlyBit网址导航</div>
+			<div class="item">
+				<span class="label">永久👉</span>
+				<span class="entry" id="main"></span>
+				<div class="warn">说明：墙外永久地址</div>
+			</div>
+			<hr/>
+			<div class="item">
+				<span class="label">入口1👉</span>
+				<span class="entry" id="url1"></span>
+				<div class="warn">推荐入口：点击进入</div>
+			</div>
+			<hr/>
+			<div class="item">
+				<span class="label">入口2👉</span>
+				<span class="entry" id="url2"></span>
+				<div class="warn">推荐入口：点击进入</div>
+			</div>
+			<hr/>
+			<div class="item">
+				<span class="label">入口3👉</span>
+				<span class="entry" id="url3"></span>
+				<div class="warn">推荐入口：点击进入</div>
+			</div>
+			<hr/>
+			<div class="item">
+				<span class="label">GitHub👉</span>
+				<span class="entry" id="github">GitHub</span>
+				<div class="warn">说明：永不失联，点击进入</div>
+			</div>
+			<hr/>
+			<div class="info">
+				按 Ctrl + D 收藏本页
+			</div>
+		</div>
+	</div>
+	<script>
+		const githubUrl = "https://github.com/FlyBitVIP/FlyBit-Airport-Address"
+		const getDomain = (index) => {
+			return "fly-bit-" + index + ".xyz"
+		}
+		$('#main').html("flybit.vip")
+		$('#url1').html(getDomain(1))
+		$('#url2').html(getDomain(2))
+		$('#url3').html(getDomain(3))
+		$('.item').click(function(){
+			let target = $(this).find(".entry").eq(0).html()
+			target = target == "GitHub" ? githubUrl : "https://" + target
+			window.open(target)
+		})
+	</script>
+</body>
+
+</html>

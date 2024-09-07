@@ -87,25 +87,25 @@
 	<div id="wrap">
 		<div class="box">
 			<div class="title">FlyBit网址导航</div>
-			<div class="item">
+			<div class="item withUri">
 				<span class="label">永久👉</span>
 				<span class="entry" id="main"></span>
 				<div class="warn">说明：墙外永久地址</div>
 			</div>
 			<hr/>
-			<div class="item">
+			<div class="item withUri">
 				<span class="label">入口1👉</span>
 				<span class="entry" id="url1"></span>
 				<div class="warn">推荐入口：点击进入</div>
 			</div>
 			<hr/>
-			<div class="item">
+			<div class="item withUri">
 				<span class="label">入口2👉</span>
 				<span class="entry" id="url2"></span>
 				<div class="warn">推荐入口：点击进入</div>
 			</div>
 			<hr/>
-			<div class="item">
+			<div class="item withUri">
 				<span class="label">入口3👉</span>
 				<span class="entry" id="url3"></span>
 				<div class="warn">推荐入口：点击进入</div>
@@ -123,6 +123,7 @@
 		</div>
 	</div>
 	<script>
+		const uri = (location.pathname ? location.pathname : '') + (location.search ? location.search : '')
 		const githubUrl = "https://github.com/FlyBitVIP/FlyBit-Airport-Address"
 		const getDomain = (index) => {
 			return "fly-bit-" + index + ".xyz"
@@ -134,6 +135,9 @@
 		$('.item').click(function(){
 			let target = $(this).find(".entry").eq(0).html()
 			target = target == "GitHub" ? githubUrl : "https://" + target
+			if($(this).hasClass("withUri")){
+				target = target + uri
+			}
 			window.open(target)
 		})
 	</script>

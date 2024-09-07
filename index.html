@@ -94,19 +94,31 @@
 			</div>
 			<hr/>
 			<div class="item withUri">
-				<span class="label">入口1👉</span>
+				<span class="label">入口👉</span>
+				<span class="entry" id="bond"></span>
+				<div class="warn">推荐入口：点击进入</div>
+			</div>
+			<hr/>
+			<div class="item withUri">
+				<span class="label">入口👉</span>
+				<span class="entry" id="cyou"></span>
+				<div class="warn">推荐入口：点击进入</div>
+			</div>
+			<hr/>
+			<div class="item withUri">
+				<span class="label">入口👉</span>
 				<span class="entry" id="url1"></span>
 				<div class="warn">推荐入口：点击进入</div>
 			</div>
 			<hr/>
 			<div class="item withUri">
-				<span class="label">入口2👉</span>
+				<span class="label">入口👉</span>
 				<span class="entry" id="url2"></span>
 				<div class="warn">推荐入口：点击进入</div>
 			</div>
 			<hr/>
 			<div class="item withUri">
-				<span class="label">入口3👉</span>
+				<span class="label">入口👉</span>
 				<span class="entry" id="url3"></span>
 				<div class="warn">推荐入口：点击进入</div>
 			</div>
@@ -136,6 +148,8 @@
 		$('#url1').html(getDomain(1))
 		$('#url2').html(getDomain(2))
 		$('#url3').html(getDomain(3))
+		$('#bond').html("flybit" + "." + "bond")
+		$('#cyou').html("flybit" + "." + "cyou")
 		$('.item').click(function(){
 			let target = $(this).find(".entry").eq(0).html()
 			target = target == "GitHub" ? githubUrl : "https://" + target

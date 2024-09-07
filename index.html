@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
 	<title>FlyBit</title>
 	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-K3R3MT88');</script>
+<!-- End Google Tag Manager -->
 	<style>
 		* {
 			color: #FEFEFE;
@@ -29,17 +32,30 @@
 		.box{
 			width: 80%;
 			max-width: 300px;
-			margin: 80px auto 0 auto;
+			margin: 30px auto 0 auto;
 		}
 		
 		.title {
 			font-weight: bold;
-			color: green;
+			color: #73AFF6;
 			width: 100%;
 			text-align: center;
 			font-size: 1.5em;
-			margin-bottom: 50px;
+			margin-bottom: 10px;
+			
 		}
+		
+		.title1 {
+			background: linear-gradient(to right, #00ff00, #ffff00, #00ff00);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			width: 100%;
+			text-align: right;
+			font-size: 1em;
+			margin-bottom: 20px;
+		}
+		
 		.item {
 			width: 100%;
 			text-align: left;
@@ -77,7 +93,17 @@
 			width: 100%;
 			text-align: center;
 			font-size: 1em;
-			margin-top: 50px;
+			margin-top: 30px;
+		}
+		
+		.good{
+			color: #77F50F
+		}
+		.bad{
+			color: #EE493C
+		}
+		.normal{
+			color: #73E8CB
 		}
 	</style>
 </head>
@@ -86,45 +112,48 @@
 	<div id="wrap">
 		<div class="box">
 			<div class="title">FlyBit网址导航</div>
+			<div class="title1">-----推广返佣50%</div>
 			<div class="item withUri">
 				<span class="label">永久👉</span>
-				<span class="entry" id="main"></span>
+				<span class="entry bad" id="main"></span>
 				<div class="warn">说明：墙外永久地址</div>
 			</div>
 			<hr/>
 			<div class="item withUri">
 				<span class="label">入口👉</span>
-				<span class="entry" id="bond"></span>
+				<span class="entry good" id="bond"></span>
 				<div class="warn">推荐入口：点击进入</div>
 			</div>
 			<hr/>
 			<div class="item withUri">
 				<span class="label">入口👉</span>
-				<span class="entry" id="cyou"></span>
+				<span class="entry good" id="cyou"></span>
+				<div class="warn">推荐入口：点击进入</div>
+			</div>
+			<hr/>
+			<!--
+			<div class="item withUri">
+				<span class="label">入口👉</span>
+				<span class="entry bad" id="url1"></span>
+				<div class="warn">推荐入口：点击进入</div>
+			</div>
+			<hr/>
+			-->
+			<div class="item withUri">
+				<span class="label">入口👉</span>
+				<span class="entry normal" id="url2"></span>
 				<div class="warn">推荐入口：点击进入</div>
 			</div>
 			<hr/>
 			<div class="item withUri">
 				<span class="label">入口👉</span>
-				<span class="entry" id="url1"></span>
-				<div class="warn">推荐入口：点击进入</div>
-			</div>
-			<hr/>
-			<div class="item withUri">
-				<span class="label">入口👉</span>
-				<span class="entry" id="url2"></span>
-				<div class="warn">推荐入口：点击进入</div>
-			</div>
-			<hr/>
-			<div class="item withUri">
-				<span class="label">入口👉</span>
-				<span class="entry" id="url3"></span>
+				<span class="entry normal" id="url3"></span>
 				<div class="warn">推荐入口：点击进入</div>
 			</div>
 			<hr/>
 			<div class="item">
 				<span class="label">GitHub👉</span>
-				<span class="entry" id="github">GitHub</span>
+				<span class="entry good" id="github">GitHub</span>
 				<div class="warn">说明：永不失联，点击进入</div>
 			</div>
 			<hr/>
@@ -133,6 +162,9 @@
 			</div>
 		</div>
 	</div>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3R3MT88" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 	<script>
 
 		const fullUrl = window.location.href

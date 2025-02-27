@@ -46,7 +46,7 @@
 		
 		.box{
 			width: 80%;
-			max-width: 300px;
+			max-width: 400px;
 			margin: 30px auto 0 auto;
 		}
 		
@@ -66,9 +66,21 @@
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			width: 100%;
-			text-align: right;
+			text-align: center;
 			font-size: 1em;
 			margin-bottom: 20px;
+		}
+		
+		.title2 {
+			background: linear-gradient(to right, red, purple, yellow);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			width: 100%;
+			text-align: center;
+			font-size: 1em;
+			margin-bottom: 20px;
+			font-weight: bold;
 		}
 		
 		.item {
@@ -127,7 +139,9 @@
 	<div id="wrap">
 		<div class="box">
 			<div class="title">FlyBit网址导航</div>
-			<div class="title1">-----推广返佣40%</div>
+			<hr/>
+			<div class="title1">推广返佣40%,注册即可免费试用2G</div>
+			<hr/>
 			<div class="item withUri">
 				<span class="label">入口👉</span>
 				<span class="entry good" id="bond"></span>
@@ -152,6 +166,10 @@
 				<div class="warn">说明：墙外永久地址</div>
 			</div>
 			<hr/>
+			<div class="title2">
+				专线+中转、稳定、快速、便宜
+			</div>
+			<hr/>
 			<div class="info">
 				按 Ctrl + D 收藏本页
 			</div>
@@ -171,14 +189,12 @@
 			return "fly-bit-" + index + ".xyz"
 		}
 		$('#main').html("flybit.vip")
-		$('#url1').html(getDomain(1))
-		$('#url2').html(getDomain(2))
-		$('#url3').html(getDomain(3))
 		$('#bond').html("flybit" + "." + "bond")
 		$('#cyou').html("flybit" + "." + "cyou")
 		$('.item').click(function(){
 			let target = $(this).find(".entry").eq(0).html()
 			target = target == "GitHub" ? githubUrl : "https://" + target
+			alert(target)
 			if($(this).hasClass("withUri")){
 				target = target + urlAfterHost
 			}

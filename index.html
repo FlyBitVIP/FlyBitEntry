@@ -134,13 +134,13 @@
 			<hr/>
 			<div class="item withUri">
 				<span class="label">入口👉</span>
-				<span class="entry good" id="cc"></span>
+				<span class="entry good" id="best"></span>
 				<div class="warn">推荐入口：点击进入</div>
 			</div>
 			<hr/>
 			<div class="item withUri">
 				<span class="label">入口👉</span>
-				<span class="entry good" id="space"></span>
+				<span class="entry good" id="my"></span>
 				<div class="warn">推荐入口：点击进入</div>
 			</div>
 			<hr/>
@@ -179,8 +179,8 @@
 			return "fly-bit-" + index + ".xyz"
 		}
 		$('#main').html("flybit.vip")
-		$('#cc').html("flybit" + "." + "cc")
-		$('#space').html("flybit" + "." + "space")
+		$('#best').html("flybit" + "." + "best")
+		$('#my').html("flybit" + "." + "my")
 		$('.item').click(function(){
 			let target = $(this).find(".entry").eq(0).html()
 			target = target == "GitHub" ? githubUrl : "https://" + target

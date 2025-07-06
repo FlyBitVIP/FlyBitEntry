@@ -134,7 +134,7 @@
 			<hr/>
 			<div class="item withUri">
 				<span class="label">入口👉</span>
-				<span class="entry good" id="best"></span>
+				<span class="entry good" id="us"></span>
 				<div class="warn">推荐入口：点击进入</div>
 			</div>
 			<hr/>
@@ -175,11 +175,9 @@
 		
 		const uri = (location.pathname ? location.pathname : '') + (location.search ? location.search : '')
 		const githubUrl = "https://github.com/FlyBitVIP/FlyBit-Airport-Address"
-		const getDomain = (index) => {
-			return "fly-bit-" + index + ".xyz"
-		}
+
 		$('#main').html("flybit.vip")
-		$('#best').html("flybit" + "." + "best")
+		$('#best').html("flybit" + "." + "us")
 		$('#my').html("flybit" + "." + "my")
 		$('.item').click(function(){
 			let target = $(this).find(".entry").eq(0).html()

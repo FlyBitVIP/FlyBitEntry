@@ -134,13 +134,13 @@
 			<hr/>
 			<div class="item withUri">
 				<span class="label">入口👉</span>
-				<span class="entry good" id="us"></span>
+				<span class="entry good" id="web1"></span>
 				<div class="warn">推荐入口：点击进入</div>
 			</div>
 			<hr/>
 			<div class="item withUri">
 				<span class="label">入口👉</span>
-				<span class="entry good" id="my"></span>
+				<span class="entry good" id="web2"></span>
 				<div class="warn">推荐入口：点击进入</div>
 			</div>
 			<hr/>
@@ -177,8 +177,8 @@
 		const githubUrl = "https://github.com/FlyBitVIP/FlyBit-Airport-Address"
 
 		$('#main').html("flybit.vip")
-		$('#us').html("flybit" + "." + "us")
-		$('#my').html("flybit" + "." + "my")
+		$('#web1').html("flybit" + "." + "fit")
+		$('#web2').html("flybit" + "." + "asia")
 		$('.item').click(function(){
 			let target = $(this).find(".entry").eq(0).html()
 			target = target == "GitHub" ? githubUrl : "https://" + target

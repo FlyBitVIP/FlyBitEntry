@@ -144,6 +144,24 @@
 				<div class="warn">推荐入口：点击进入</div>
 			</div>
 			<hr/>
+			<div class="item withUri">
+				<span class="label">入口👉</span>
+				<span class="entry good" id="web3"></span>
+				<div class="warn">推荐入口：点击进入</div>
+			</div>
+			<hr/>
+			<div class="item withUri">
+				<span class="label">入口👉</span>
+				<span class="entry good" id="web4"></span>
+				<div class="warn">推荐入口：点击进入</div>
+			</div>
+			<hr/>
+			<div class="item withUri">
+				<span class="label">入口👉</span>
+				<span class="entry good" id="web5"></span>
+				<div class="warn">推荐入口：点击进入</div>
+			</div>
+			<hr/>
 			<div class="item">
 				<span class="label">GitHub👉</span>
 				<span class="entry good" id="github">GitHub</span>
@@ -177,8 +195,11 @@
 		const githubUrl = "https://github.com/FlyBitVIP/FlyBit-Airport-Address"
 
 		$('#main').html("flybit.vip")
-		$('#web1').html("flybit" + "." + "fit")
-		$('#web2').html("flybit" + "." + "asia")
+		$('#web1').html("flybit1" + "." + "top")
+		$('#web2').html("flybit2" + "." + "top")
+		$('#web3').html("flybit3" + "." + "top")
+		$('#web4').html("flybit4" + "." + "top")
+		$('#web5').html("flybit5" + "." + "top")
 		$('.item').click(function(){
 			let target = $(this).find(".entry").eq(0).html()
 			target = target == "GitHub" ? githubUrl : "https://" + target

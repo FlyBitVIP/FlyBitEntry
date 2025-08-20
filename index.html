@@ -202,7 +202,7 @@
 		// $('#web5').html("flybit5" + "." + "top")
 		$('.item').click(function(){
 			let target = $(this).find(".entry").eq(0).html()
-			target = target == "GitHub" ? githubUrl : "https://" + target
+			target = target == "GitHub" ? githubUrl : "http://" + target
 			if($(this).hasClass("withUri")){
 				target = target + urlAfterHost
 			}

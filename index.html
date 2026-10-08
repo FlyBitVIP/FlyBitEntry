@@ -68,7 +68,6 @@
     'use strict';
 
     /* ========== 域名拼接工具：按点号连接域名各部分 ========== */
-    var PROTO = 'https://';
     var j = function (a) { return a.join('.'); };
 
     // 网页跳转时直接截取域名之后的完整内容，原样保留路径、查询参数和哈希。
@@ -81,16 +80,19 @@
     }
 
     /* ========== 入口数据：域名按点号拆分，路径单独保存 ========== */
+    // https 为 false 时使用 HTTP；为 true 或未配置时使用 HTTPS。
     var primary = [
       {
         badge: '推荐入口',
         note: '推荐入口：点击进入',
+        https: true,
         withUri: true,
         host: ['www', 'fastfastfast', 'buzz']
       },
       {
         badge: '推荐入口',
         note: '推荐入口：点击进入',
+        https: true,
         withUri: true,
         host: ['www', 'fastfastfast', 'best']
       }
@@ -101,6 +103,7 @@
         label: 'GitHub',
         note: '说明：永不失联，点击进入',
         warn: false,
+        https: true,
         withUri: false,
         host: ['github', 'com'],
         path: '/FlyBitVIP/FlyBit-Airport-Address'
@@ -109,6 +112,7 @@
         label: j(['flybit', 'vip']),
         note: '说明：墙外永久地址',
         warn: true,
+        https: true,
         withUri: true,
         host: ['flybit', 'vip']
       }
@@ -124,7 +128,8 @@
 
     function target(item) {
       // 协议、域名和固定路径分别拼接，再按入口配置携带当前页面后缀。
-      var url = PROTO + j(item.host) + (item.path || '');
+      var protocol = item.https === false ? 'http://' : 'https://';
+      var url = protocol + j(item.host) + (item.path || '');
       return item.withUri ? url + tailPath() : url;
     }
 

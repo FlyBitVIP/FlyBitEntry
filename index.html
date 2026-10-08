@@ -1,215 +1,236 @@
+
 <!doctype html>
 <html lang="zh-CN">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
-	<title>FlyBit</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-N10D92EKF3"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	
-	  gtag('config', 'G-N10D92EKF3');
-	</script>
-	<style>
-		* {
-			color: #FEFEFE;
-		}
-	
-		body {
-			background-color: #333;
-			height: 100%;
-			width: 100%;
-			overflow: hidden;
-		}
-		hr {
-			margin-bottom: 20px;
-			border: 1px solid #4a4a4a;
-		}
-		.wrap{
-			width: 100%;
-			text-align: center;
-		}
-		
-		.box{
-			width: 80%;
-			max-width: 350px;
-			margin: 30px auto 0 auto;
-		}
-		
-		.title {
-			font-weight: bold;
-			color: #73AFF6;
-			width: 100%;
-			text-align: center;
-			font-size: 1.5em;
-			margin-bottom: 10px;
-			
-		}
-		
-		.title1 {
-			background: linear-gradient(to right, #00ff00, #ffff00, #00ff00);
-			background-clip: text;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			width: 100%;
-			text-align: center;
-			font-size: 1em;
-			margin-bottom: 20px;
-		}
-		
-		.title2 {
-			background: linear-gradient(to right, red, purple, yellow);
-			background-clip: text;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			width: 100%;
-			text-align: center;
-			font-size: 1em;
-			margin-bottom: 20px;
-			font-weight: bold;
-		}
-		
-		.item {
-			width: 100%;
-			text-align: left;
-			margin-bottom: 5px;
-			cursor: pointer;
-		}
-		
-		.label{
-			font-size: 0.8em;
-			color: #ccc;
-		}
-		
-		.entry{
-			margin-left: 10px;
-			font-size: 1.1em;
-			font-style: normal;
-			font-weight: bold;
-			white-space:nowrap;
-			word-wrap: break-word;
-			word-break:break-all;
-			text-overflow:ellipsis;
-			overflow:hidden;
-			max-width: 60%;
-		}
-		.warn{
-			font-size: 0.7em;
-			font-style: italic;
-			color: #999;
-			margin-top: 5px;
-		}
-		
-		.info {
-			font-weight: bold;
-			color: yellow;
-			width: 100%;
-			text-align: center;
-			font-size: 1em;
-			margin-top: 30px;
-		}
-		
-		.good{
-			color: #77F50F
-		}
-		.bad{
-			color: #EE493C
-		}
-		.normal{
-			color: #73E8CB
-		}
-	</style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#070b16" />
+<meta name="color-scheme" content="dark" />
+<meta name="description" content="FlyBit 网址导航 · 专线 + 中转，稳定、快速、便宜" />
+<title>FlyBit 网址导航</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N10D92EKF3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N10D92EKF3');
+</script>
+
+<style>:root{--bg:#070b16;--panel:rgba(255,255,255,.04);--line:rgba(255,255,255,.09);--ink:#f4f7fc;--muted:#94a4bb;--faint:#6b7c93;--mint:#3ddc97;--sky:#74b9ff;--gold:#ffcf70;--coral:#ff8a7a;--r-lg:22px;--r-md:16px;--shadow:0 18px 44px rgba(2,6,16,.45);--font:-apple-system,BlinkMacSystemFont,"Segoe UI Variable","Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Roboto,Helvetica,Arial,sans-serif;}*{box-sizing:border-box}html,body{margin:0;min-height:100%}body{font-family:var(--font);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;overflow-x:hidden;}button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;cursor:pointer;-webkit-appearance:none;appearance:none;-webkit-tap-highlight-color:transparent;}.bg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}.bg::before{content:"";position:absolute;inset:0;background:radial-gradient(90% 55% at 50% -12%,rgba(86,132,255,.26),transparent 62%),radial-gradient(70% 45% at 88% 8%,rgba(61,220,151,.14),transparent 60%),linear-gradient(180deg,#121c33 0%,#0a1020 45%,#06090f 100%);}.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse 80% 55% at 50% 12%,#000 10%,transparent 72%);mask-image:radial-gradient(ellipse 80% 55% at 50% 12%,#000 10%,transparent 72%);}.orb{position:absolute;border-radius:50%;filter:blur(6px)}.orb-a{width:520px;height:520px;left:-190px;top:-190px;background:radial-gradient(circle,rgba(120,150,255,.30),transparent 66%);animation:float 17s ease-in-out infinite;}.orb-b{width:420px;height:420px;right:-160px;bottom:-120px;background:radial-gradient(circle,rgba(61,220,151,.18),transparent 66%);animation:float 21s ease-in-out infinite reverse;}.page{position:relative;z-index:1;width:100%;max-width:820px;margin:0 auto;padding:calc(40px + env(safe-area-inset-top)) 20px calc(48px + env(safe-area-inset-bottom));}.hero{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:34px;}.brand{display:inline-flex;align-items:center;gap:18px;text-align:left;}.logo{flex:none;display:grid;place-items:center;width:clamp(50px,13vw,62px);height:clamp(50px,13vw,62px);border-radius:18px;background:linear-gradient(145deg,#6fa8ff,#3ddc97);box-shadow:0 10px 26px rgba(72,130,255,.34),inset 0 1px 0 rgba(255,255,255,.45);font-size:clamp(17px,4vw,21px);font-weight:800;letter-spacing:-.02em;color:#05271c;}.brand-txt{min-width:0}h1{margin:0;font-size:clamp(32px,7.4vw,52px);font-weight:800;line-height:1.08;letter-spacing:-.03em;background:linear-gradient(100deg,#ffffff 6%,#cfe1ff 44%,#9df0d6 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;}.promo{display:inline-flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;max-width:100%;margin:22px 0 0;padding:9px 16px;border:1px solid rgba(255,207,112,.3);border-radius:999px;background:linear-gradient(180deg,rgba(255,207,112,.14),rgba(255,207,112,.06));color:#ffe4ab;font-size:14px;font-weight:600;line-height:1.4;}.promo .tag{padding:2px 7px;border-radius:6px;background:rgba(255,207,112,.2);color:var(--gold);font-size:11px;font-weight:700;letter-spacing:.04em;}.sec{margin-top:32px}.sec-head{display:flex;align-items:center;gap:12px;margin:0 0 14px;padding:0 4px;}.sec-head h2{margin:0;font-size:13px;font-weight:700;letter-spacing:.16em;color:#c7d4e6;}.sec-head .bar{flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent);}.sec-head .count{font-size:11px;font-weight:600;letter-spacing:.06em;color:var(--faint);}.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{position:relative;overflow:hidden;display:flex;flex-direction:column;min-height:180px;padding:18px;border:1px solid rgba(61,220,151,.22);border-radius:var(--r-lg);background:linear-gradient(165deg,rgba(61,220,151,.14),rgba(255,255,255,.03) 48%,rgba(6,10,18,.28));box-shadow:var(--shadow);text-align:left;}.card.b{border-color:rgba(116,185,255,.24);background:linear-gradient(165deg,rgba(116,185,255,.15),rgba(255,255,255,.03) 48%,rgba(6,10,18,.28));}.card::after{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(120% 80% at 100% 0%,rgba(255,255,255,.10),transparent 55%);pointer-events:none;}.badge{position:relative;z-index:1;align-self:flex-start;display:inline-flex;align-items:center;gap:7px;padding:5px 11px;border-radius:999px;background:rgba(4,9,18,.42);color:#c7ffe6;font-size:12px;font-weight:700;letter-spacing:.02em;}.card.b .badge{color:#d6e9ff}.dot{width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 rgba(61,220,151,.55);animation:pulse 2.4s ease-out infinite;}.card.b .dot{background:var(--sky);box-shadow:0 0 0 0 rgba(116,185,255,.55)}.idx{position:absolute;right:12px;top:2px;z-index:0;font-size:78px;font-weight:800;line-height:1;letter-spacing:-.06em;color:rgba(61,220,151,.13);pointer-events:none;}.card.b .idx{color:rgba(116,185,255,.15)}.domain{position:relative;z-index:1;flex:1;display:flex;align-items:flex-end;justify-content:center;text-align:center;margin:20px 0 16px;font-size:clamp(17px,4.4vw,22px);font-weight:750;line-height:1.28;letter-spacing:-.025em;color:#f8fbff;overflow-wrap:anywhere;}.card.b .domain{color:#f2f8ff}.card-foot{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:12px;}.note{color:var(--muted);font-size:12px;line-height:1.5}.go{flex:none;width:36px;height:36px;display:grid;place-items:center;border-radius:50%;background:var(--mint);box-shadow:0 6px 16px rgba(61,220,151,.28);}.card.b .go{background:var(--sky);box-shadow:0 6px 16px rgba(116,185,255,.28)}.arrow{width:7px;height:7px;margin-left:-2px;border-top:2px solid #05271c;border-right:2px solid #05271c;transform:rotate(45deg);}.list{overflow:hidden;border:1px solid var(--line);border-radius:var(--r-md);background:rgba(255,255,255,.03);box-shadow:0 10px 28px rgba(2,6,16,.32);}.row{width:100%;display:flex;align-items:center;gap:13px;padding:15px 16px;border-bottom:1px solid var(--line);text-align:left;}.row:last-child{border-bottom:0}.pip{flex:none;width:8px;height:8px;border-radius:50%;background:var(--sky)}.row.warn .pip{background:var(--coral)}.txt{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}.name{font-size:15px;font-weight:670;color:#e9f1fb;overflow-wrap:anywhere;letter-spacing:-.01em;}.row.warn .name{color:#ffd7d0}.desc{font-size:12px;color:var(--faint);line-height:1.45}.chev{flex:none;width:7px;height:7px;border-top:2px solid #8192a8;border-right:2px solid #8192a8;transform:rotate(45deg);}.foot{margin-top:38px;padding-top:22px;border-top:1px solid var(--line);text-align:center;}.slogan{display:flex;flex-direction:column;align-items:center;gap:14px;margin:0}.slogan-features{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}.slogan-features span{display:inline-flex;align-items:center;gap:7px;padding:6px 13px;border:1px solid rgba(116,185,255,.18);border-radius:999px;background:rgba(116,185,255,.06);color:#c7d4e6;font-size:12px;font-weight:600;letter-spacing:.06em}.slogan-features span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--mint);box-shadow:0 0 8px rgba(61,220,151,.35)}.hint{margin:12px 0 0;font-size:13px;color:var(--muted);line-height:1.6;}kbd{display:inline-block;min-width:22px;padding:2px 7px;margin:0 2px;border:1px solid rgba(255,255,255,.16);border-bottom-width:2px;border-radius:6px;background:rgba(255,255,255,.07);color:#e8f0fa;font:inherit;font-size:12px;font-weight:600;line-height:1.35;text-align:center;}.foot small{color:var(--faint)}.card:focus-visible,.row:focus-visible{outline:2px solid var(--sky);outline-offset:3px}.card:active{transform:translateY(1px)}.row:active{background:rgba(255,255,255,.05)}@media (hover:hover){.card,.go,.row,.chev{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease,background-color .2s ease}.card:hover{transform:translateY(-4px);box-shadow:0 26px 52px rgba(2,6,16,.5)}.card.a:hover{border-color:rgba(61,220,151,.5)}.card.b:hover{border-color:rgba(116,185,255,.55)}.card:hover .go{transform:translateX(3px)}.row:hover{background:rgba(255,255,255,.05)}.row:hover .chev{border-color:var(--ink)}}@media (max-width:700px){.page{padding-left:16px;padding-right:16px}.hero{margin-bottom:28px}.brand{gap:14px}.cards{grid-template-columns:1fr;gap:12px}.card{min-height:150px}.idx{font-size:64px}.sec{margin-top:26px}}@media (prefers-reduced-motion:reduce){.orb,.dot,.card,.go,.row,.chev{animation:none!important;transition:none!important}}@keyframes float{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(22px,20px,0)}}@keyframes pulse{70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}</style>
 </head>
 
 <body>
-	<div id="wrap">
-		<div class="box">
-			<div class="title">FlyBit网址导航</div>
-			<hr/>
-			<div class="title1">推广返佣40%,注册即可免费试用2G</div>
-<!-- 			<hr/>
-			<div class="item withUri">
-				<span class="label">入口👉</span>
-				<span class="entry good" id="web1"></span>
-				<div class="warn">推荐入口：点击进入</div>
-			</div>  -->
-			<hr/>
-			<div class="item withUri">
-				<span class="label">入口👉</span>
-				<span class="entry good" id="web2"></span>
-				<div class="warn">推荐入口：点击进入</div>
-			</div>
-			<hr/>
-			<div class="item withUri">
-				<span class="label">入口👉</span>
-				<span class="entry good" id="web3"></span>
-				<div class="warn">推荐入口：点击进入</div>
-			</div>
-			<hr/>
-<!-- 			<div class="item withUri">
-				<span class="label">入口👉</span>
-				<span class="entry good" id="web4"></span>
-				<div class="warn">推荐入口：点击进入</div>
-			</div>
-			<hr/>
-			<div class="item withUri">
-				<span class="label">入口👉</span>
-				<span class="entry good" id="web5"></span>
-				<div class="warn">推荐入口：点击进入</div>
-			</div>
-			<hr/> -->
-			<div class="item">
-				<span class="label">GitHub👉</span>
-				<span class="entry good" id="github">GitHub</span>
-				<div class="warn">说明：永不失联，点击进入</div>
-			</div>
-			<hr/>
-			<div class="item withUri">
-				<span class="label">永久👉</span>
-				<span class="entry bad" id="main"></span>
-				<div class="warn">说明：墙外永久地址</div>
-			</div>
-			<hr/>
-			<div class="title2">
-				专线+中转、稳定、快速、便宜
-			</div>
-			<hr/>
-			<div class="info">
-				按 Ctrl + D 收藏本页
-			</div>
-		</div>
-	</div>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3R3MT88" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-	<script>
+  <div class="bg" aria-hidden="true">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="grid"></span>
+  </div>
 
-		const fullUrl = window.location.href
-		const urlAfterHost = fullUrl.split(window.location.host)[1]
-		
-		const uri = (location.pathname ? location.pathname : '') + (location.search ? location.search : '')
-		const githubUrl = "https://github.com/FlyBitVIP/FlyBit-Airport-Address"
+  <main class="page">
+    <header class="hero">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">FB</span>
+        <div class="brand-txt">
+          <h1>FlyBit</h1>
+        </div>
+      </div>
+      <p class="promo"><span class="tag">活动</span>推广返佣 40%，注册即可免费试用 2G</p>
+    </header>
 
-		$('#main').html("flybit.vip")
-		// $('#web1').html("www.flybit1" + "." + "vip")
-		$('#web2').html("www.fastfastfast.buzz")
-		$('#web3').html("www.fastfastfast.best")
-		// $('#web4').html("flybit4" + "." + "top")
-		// $('#web5').html("flybit5" + "." + "top")
-		$('.item').click(function(){
-			let target = $(this).find(".entry").eq(0).html()
-			target = target == "GitHub" ? githubUrl : "https://" + target
-			if($(this).hasClass("withUri")){
-				target = target + urlAfterHost
-			}
-			window.open(target)
-		})
-	</script>
-	<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="3d3866da-86fe-4276-8fcc-08384dcb2de6";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <noscript>
+      <p class="hint">当前浏览器已禁用 JavaScript，请开启后即可查看入口地址。</p>
+    </noscript>
+
+    <section class="sec" aria-label="推荐入口">
+      <div class="cards" id="primary"></div>
+    </section>
+
+    <section class="sec" aria-label="备用通道">
+      <div class="list" id="backup"></div>
+    </section>
+
+    <footer class="foot">
+      <p class="slogan"><span class="slogan-features"><span>专线 + 中转</span><span>稳定</span><span>快速</span><span>便宜</span></span></p>
+      <p class="hint" id="bookmarkHint">按 Ctrl + D 收藏本页</p>
+      <p class="hint"><small>收藏后下次可直接打开，永不失联</small></p>
+    </footer>
+  </main>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3R3MT88" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <script>
+  (function () {
+    'use strict';
+
+    /* ========== 域名拼接工具：按点号连接域名各部分 ========== */
+    var PROTO = 'https://';
+    var j = function (a) { return a.join('.'); };
+
+    // 网页跳转时直接截取域名之后的完整内容，原样保留路径、查询参数和哈希。
+    // 本地预览不携带本地文件路径，仅保留查询参数和哈希。
+    function tailPath() {
+      if (location.protocol === 'http:' || location.protocol === 'https:') {
+        return location.href.slice(location.origin.length);
+      }
+      return location.search || location.hash ? '/' + location.search + location.hash : '';
+    }
+
+    /* ========== 入口数据：域名按点号拆分，路径单独保存 ========== */
+    var primary = [
+      {
+        badge: '推荐入口',
+        note: '推荐入口：点击进入',
+        withUri: true,
+        host: ['www', 'fastfastfast', 'buzz']
+      },
+      {
+        badge: '推荐入口',
+        note: '推荐入口：点击进入',
+        withUri: true,
+        host: ['www', 'fastfastfast', 'best']
+      }
+    ];
+
+    var backup = [
+      {
+        label: 'GitHub',
+        note: '说明：永不失联，点击进入',
+        warn: false,
+        withUri: false,
+        host: ['github', 'com'],
+        path: '/FlyBitVIP/FlyBit-Airport-Address'
+      },
+      {
+        label: j(['flybit', 'vip']),
+        note: '说明：墙外永久地址',
+        warn: true,
+        withUri: true,
+        host: ['flybit', 'vip']
+      }
+    ];
+
+    /* ========== 渲染 ========== */
+    function el(tag, cls, text) {
+      var n = document.createElement(tag);
+      if (cls) n.className = cls;
+      if (text !== undefined && text !== null) n.textContent = text;
+      return n;
+    }
+
+    function target(item) {
+      // 协议、域名和固定路径分别拼接，再按入口配置携带当前页面后缀。
+      var url = PROTO + j(item.host) + (item.path || '');
+      return item.withUri ? url + tailPath() : url;
+    }
+
+    function open(item) {
+      var url = target(item);
+      if (typeof gtag === 'function') {
+        gtag('event', 'click_entry', { event_label: item.label || j(item.host || []), transport_type: 'beacon' });
+      }
+      var w = window.open(url, '_blank');
+      if (w) { w.opener = null; return; }
+      location.href = url; // 被拦截时的兜底
+    }
+
+    function renderCard(item, i) {
+      var domain = j(item.host);
+      var card = el('button', 'card ' + (i === 0 ? 'a' : 'b'));
+      card.type = 'button';
+      card.setAttribute('aria-label', item.badge + ' ' + domain);
+
+      var badge = el('span', 'badge');
+      var dot = el('span', 'dot');
+      dot.setAttribute('aria-hidden', 'true');
+      badge.appendChild(dot);
+      badge.appendChild(document.createTextNode(item.badge));
+
+      var idx = el('span', 'idx', '0' + (i + 1));
+      idx.setAttribute('aria-hidden', 'true');
+
+      var go = el('span', 'go');
+      go.setAttribute('aria-hidden', 'true');
+      go.appendChild(el('span', 'arrow'));
+
+      var foot = el('span', 'card-foot');
+      foot.appendChild(el('span', 'note', item.note));
+      foot.appendChild(go);
+
+      card.appendChild(badge);
+      card.appendChild(idx);
+      card.appendChild(el('span', 'domain', domain));
+      card.appendChild(foot);
+      card.addEventListener('click', function () { open(item); });
+
+      document.getElementById('primary').appendChild(card);
+    }
+
+    function renderRow(item) {
+      var text = item.label || j(item.host);
+      var row = el('button', 'row' + (item.warn ? ' warn' : ''));
+      row.type = 'button';
+      row.setAttribute('aria-label', text + '，' + item.note);
+
+      var pip = el('span', 'pip');
+      pip.setAttribute('aria-hidden', 'true');
+
+      var txt = el('span', 'txt');
+      txt.appendChild(el('span', 'name', text));
+      txt.appendChild(el('span', 'desc', item.note));
+
+      var chev = el('span', 'chev');
+      chev.setAttribute('aria-hidden', 'true');
+
+      row.appendChild(pip);
+      row.appendChild(txt);
+      row.appendChild(chev);
+      row.addEventListener('click', function () { open(item); });
+
+      document.getElementById('backup').appendChild(row);
+    }
+
+    for (var i = 0; i < primary.length; i++) renderCard(primary[i], i);
+    for (var k = 0; k < backup.length; k++) renderRow(backup[k]);
+
+    /* ========== 收藏提示：按操作系统区分快捷键 ========== */
+    (function bookmarkHint() {
+      var box = document.getElementById('bookmarkHint');
+      if (!box) return;
+
+      var ua = navigator.userAgent || '';
+      var platform = ((navigator.userAgentData && navigator.userAgentData.platform) || '') ||
+                     (navigator.platform || '');
+      var isApple = /mac|iphone|ipad|ipod/i.test(platform) || /Mac OS X|Macintosh/i.test(ua);
+      var isMobile = /android|iphone|ipad|ipod|windows phone|mobile/i.test(ua) ||
+                     (navigator.maxTouchPoints > 1 && /mac/i.test(platform));
+
+      if (isMobile) {
+        box.innerHTML = '手机端请点击浏览器菜单，选择 <strong>添加到主屏幕 / 加入书签</strong>';
+      } else if (isApple) {
+        box.innerHTML = '按 <kbd>⌘ Command</kbd> + <kbd>D</kbd> 收藏本页';
+      } else {
+        box.innerHTML = '按 <kbd>Ctrl</kbd> + <kbd>D</kbd> 收藏本页';
+      }
+    })();
+  })();
+  </script>
+
+  <!-- Crisp 在线客服 -->
+  <script type="text/javascript">
+    window.$crisp = [];
+    window.CRISP_WEBSITE_ID = "3d3866da-86fe-4276-8fcc-08384dcb2de6";
+    (function () {
+      var d = document;
+      var s = d.createElement("script");
+      s.src = "https://client.crisp.chat/l.js";
+      s.async = 1;
+      d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+  </script>
 </body>
-
 </html>
